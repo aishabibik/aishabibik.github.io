@@ -1,0 +1,13 @@
+function hourglass() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "";
+  setTimeout(function () {
+      a.innerHTML = "";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "";
+    }, 2000);
+}
+hourglass();
+setInterval(hourglass, 3000);
